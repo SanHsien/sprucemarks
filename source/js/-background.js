@@ -1252,7 +1252,7 @@ const install_or_upgrade = local.function.install_or_upgrade = async function in
             let check_version = ''
             const message_upgrade = 'install_or_upgrade -> upgrade for version less than '
 
-            check_version = '2025.6.26.0'
+            check_version = '2026.8.28.0'
             if (version_less_than(version_in_storage, check_version)) {
                 // version_storage is less than check_version
                 log(message_upgrade + check_version)

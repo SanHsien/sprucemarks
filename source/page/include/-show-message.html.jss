@@ -1,26 +1,30 @@
 <div id="show-message-upgrade-complete" class="hidden show-message">
     <div class="box">
         <div class="box-inner">
-            <h2>Upgrade Complete</h2>
-
-            <ul>
-                <li>
-                    Added support for duplicate bookmark ancestors.
-                </li>
-            </ul>
-
-            <hr>
+            <h2>Warning</h2>
 
             <p>
-                This upgrade is intended to support the odd <a href="https://developer.chrome.com/blog/bookmarks-sync-changes" rel="noopener noreferrer" target="_blank">bookmark changes</a> coming to Chrome.
+                This is the final version of Sprucemarks.
             </p>
 
             <p>
-                Even though this version of Sprucemarks can sort two duplicately named locations that only differ by how they are being stored, Sprucemarks can not control how bookmarks are displayed. Expect browsers like Chrome to display things very strangely if you have a mix of local and synced bookmarks.
+                On November 1, 2026 this software will be removed from GitHub, Google, Microsoft, Mozilla, and other software distribution locations.
             </p>
 
             <p>
-                You can bypass all this confusion by only using local or synced bookmarks, and not mixing them both. The browser bookmark manager is a great location to audit and relocate bookmarks if you find yourself in this situation.
+                If you wish to keep using Sprucemarks or any of my other software going forward, you must download your own copy from <a href="https://github.com/nightmode?tab=repositories&sort=name" rel="noopener noreferrer" target="_blank">GitHub</a>. Each available project will have a releases section with an archive version you can download. All projects are in the public domain so you can modify, remix, redistribute, or do whatever you want.
+            </p>
+
+            <p>
+                You can run local extensions by activating developer mode in your browser and loading the extracted files from a location on your hard drive. It is a bit more intial setup but then you are in control.
+            </p>
+
+            <p>
+                If you DO NOT download Sprucemarks, you will likely lose access to it once it disappears on November 1, 2026.
+            </p>
+
+            <p>
+                I know ownership is a chore but only ownership can ensure you enjoy your favorite movies, tv shows, music, books, and software as you travel through time. Take care.
             </p>
         </div><!-- box-inner -->
     </div><!-- box -->
