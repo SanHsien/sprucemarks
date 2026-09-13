@@ -1,0 +1,10 @@
+{
+    "extensionDescription": {
+        "message": "自動依標題、日期或網址排序書籤。",
+        "description": "擴充功能簡介。"
+    },
+    "extensionName": {
+        "message": "Sprucemarks",
+        "description": "擴充功能名稱。"
+    }
+}

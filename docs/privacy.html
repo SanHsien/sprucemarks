@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy — Sprucemarks</title>
+  <style>
+    body { margin: 0; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+    main { max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    h1 { font-size: 1.6rem; margin-top: 0; color: #111; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+    p, li { font-size: 1rem; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { text-align: left; padding: 0.5rem 0.75rem; border: 1px solid #ddd; font-size: 0.95rem; }
+    th { background: #f5f5f5; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 2rem 0; }
+    a { color: #0b57d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: #f0f0f0; padding: 0.15rem 0.35rem; border-radius: 3px; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>隱私權政策 / Privacy Policy</h1>
+    <p class="meta">
+      產品 / Product：<strong>Sprucemarks (Bookmark Sorter)</strong><br>
+      開發維護者 / Developer：SanHsien<br>
+      開源原始碼 / Source Repository：<a href="https://github.com/SanHsien/sprucemarks">GitHub: SanHsien/sprucemarks</a><br>
+      更新日期 / Last updated：2026-09-11
+    </p>
+
+    <p>本頁面為公開、靜態之隱私權政策（不需登入、不需執行 JavaScript，相容 Google Chrome Web Store 審查機制）。Markdown 原文可於 <a href="https://github.com/SanHsien/sprucemarks/blob/main/docs/PRIVACY_POLICY.md">GitHub 檢視</a>。</p>
+
+    <hr>
+
+    <h2>1. 核心隱私承諾 / Core Commitment</h2>
+    <p>Sprucemarks 堅持<strong>零收集、零追蹤、零外部伺服器連線</strong>原則：</p>
+    <ul>
+      <li><strong>無自有伺服器</strong>：本擴充功能沒有任何後端伺服器，不會將任何資料傳輸給開發者或第三方。</li>
+      <li><strong>無分析與追蹤</strong>：不包含 Google Analytics、遙測（Telemetry）、廣告代碼或任何第三方追蹤腳本。</li>
+      <li><strong>不販售使用者資料</strong>：我們絕不販售、出租、交換或以任何形式提供使用者資料。</li>
+    </ul>
+
+    <h2>2. 我們處理的資料 / Data We Process</h2>
+    <p>本擴充功能僅於您的<strong>本機瀏覽器環境</strong>中處理下列資料：</p>
+    <ul>
+      <li><strong>書籤資訊（Bookmarks）</strong>：本機讀取書籤的標題（Title）、網址（URL）、建立時間與階層結構，用於依據您所選擇的規則在瀏覽器內部進行排序。排序演算法 100% 在本機運行。</li>
+      <li><strong>排序偏好（Settings & Preferences）</strong>：您在選項頁面中設定的排序標準（標題/日期/網址、遞增/遞減、排除目錄、深淺色主題），儲存於本機 <code>chrome.storage.local</code>。</li>
+    </ul>
+
+    <h2>3. 權限宣告用途 / Permissions Justification</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>權限 (Permission)</th>
+          <th>用途說明 (Justification)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>bookmarks</code></td>
+          <td>讀取書籤標題、日期、網址進行排序比對，並在必要時調用 <code>move</code> API 調整書籤於資料夾內的顯示順序。所有資料保留於本機。</td>
+        </tr>
+        <tr>
+          <td><code>storage</code></td>
+          <td>於本機儲存使用者的排序偏好規則、排除資料夾設定與外觀主題。不儲存任何個人隱私身分。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. 第三方資料共享 / Third-Party Data Sharing</h2>
+    <p>本擴充功能<strong>完全不與任何第三方共享資料</strong>。本軟體無任何網路請求權限，無法連線至外部網際網路。</p>
+
+    <h2>5. 聯絡方式 / Contact</h2>
+    <p>若您對本隱私權政策或擴充功能運作有任何疑問，歡迎透過 GitHub Issue 與我們聯繫：</p>
+    <p><a href="https://github.com/SanHsien/sprucemarks/issues">https://github.com/SanHsien/sprucemarks/issues</a></p>
+  </main>
+</body>
+</html>
