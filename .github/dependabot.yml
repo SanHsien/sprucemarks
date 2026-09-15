@@ -1,0 +1,30 @@
+version: 2
+updates:
+  # 這是一個瀏覽器擴充套件，原始碼是 HTML／JS／圖檔，沒有 package.json 或任何
+  # 套件 manifest；唯一可由機器更新的依賴面是 workflow 裡釘住的 actions。
+  #
+  # fleet-waiver: freshness -- 沒有套件 manifest，沒有宣告下限可以拿來跟現行版比對
+  #
+  # 上游 nightmode/sprucemarks 已經 archived（2026-08-28 最後一次推送，唯讀、
+  # 0 個 issue、PR 功能關閉），不會再有新的 commit／PR／issue，所以週期性的上游
+  # 檢查沒有對象可查。解除條件很明確：上游取消封存就把這兩條豁免拿掉並補上檢查器。
+  #
+  # fleet-waiver: upstream_check -- 上游 nightmode/sprucemarks 已 archived，不會再有新 commit／PR／issue
+  # fleet-waiver: upstream_tickets -- 同上：上游已 archived，沒有 PR／issue 兩軸可追
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "07:00"
+      timezone: "Asia/Taipei"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "github-actions"
+    groups:
+      # init 與 analyze 必須跑同一個版本；拆成兩個 PR 各升一半時，CodeQL 會以
+      # 「Loaded a configuration file for version X, but running version Y」失敗。
+      codeql-action:
+        patterns:
+          - "github/codeql-action*"
