@@ -1,0 +1,29 @@
+# Python & Virtual Environments
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+
+# Environment & Sensitive Files
+.env
+.env.*
+*.local
+
+# System & Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Reports & Temporary Artifacts
+*-report.md
+dist/
+*.zip
