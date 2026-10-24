@@ -25,7 +25,7 @@
 |---|---|
 | `README.md` | 繁體中文主入口；加入擴充功能特色、Edge/Chrome/Firefox 安裝步驟與維護門禁指引 |
 | `README.en.md` | 原版英文鏡像；加入 fork 維護資訊 |
-| `AGENTS.md` / `CLAUDE.md` | 本 fork 的 AI 維護單一真相源 |
+| `AGENTS.md` | 本 fork 的 AI 維護單一真相源 |
 | `NOTICE.md` / `FORK.md` / `LICENSE` | 來源、授權（CC0 1.0）與保存說明 |
 | `tools/dev_check.ps1` | Windows 本機一鍵門禁（Python 編譯、Ruff 語法檢查、Pytest 契約測試、連結檢查） |
 | `tools/bootstrap_dev.ps1` | Windows 本機一鍵環境初始化與全量驗收 |
