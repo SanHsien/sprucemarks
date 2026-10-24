@@ -136,7 +136,7 @@ sprucemarks/
 │   ├── PRIVACY_POLICY.md       # 隱私權政策說明
 │   └── privacy.html            # 商店專用公開靜態隱私網頁
 ├── AGENTS.md                   # AI 代理維護單一真相源
-├── CLAUDE.md / GEMINI.md       # 工具指引
+├── CLAUDE.md                   # 工具指引
 ├── FORK.md                     # Fork 維護方針與差異說明
 ├── NOTICE.md                   # 版權與貢獻聲明
 ├── REVIEW.md                   # 全庫品質快照

@@ -39,7 +39,7 @@
 
 - 一般變更在本地跑過 gate 後直接推 `origin/main`。若遇高風險架構變動，可走 PR 讓 CI 驗證。
 - 修復 bug 先建立可重現失敗的測試，再做最小修改。
-- 使用繁體中文回覆；使用者文件以繁體中文為主，公開入口同步維護 [`README.en.md`](README.en.md)。
+- 使用繁體中文回覆；使用者文件以繁體中文為主，公開入口同步維護 [`README.en.md`](README.en.md)。直接交付可驗證結果，避免冗長背景鋪陳。
 - 提交訊息採用 Conventional Commits（如 `feat: ...`、`fix: ...`、`docs: ...`）。
 - [`REVIEW.md`](REVIEW.md) 是風險快照，不是每個一般 bug 的流水帳。
 
