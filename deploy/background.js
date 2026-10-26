@@ -1824,24 +1824,24 @@ const bookmark_sort = local.function.bookmark_sort = async function bookmark_sor
             // we have a non-empty folder with more than 1 item
 
             // build a string of index values so we can compare against a sorted string to determine if we need to call the bookmark_reorder function
-            let indexBefore = ''
+            let indexBefore = [] // join with a separator, otherwise different orders can concatenate to the same string (for example 1,10,... and 11,0,...)
 
             for (const item of bookmarks) {
-                indexBefore += item.index
+                indexBefore.push(item.index)
             } // for
 
             bookmarks.sort(function(bookmark_a, bookmark_b) {
                 return bookmark_compare(bookmark_a, bookmark_b, parent_id, ancestor)
             })
 
-            let indexAfter = ''
+            let indexAfter = []
 
             for (const item of bookmarks) {
-                indexAfter += item.index
+                indexAfter.push(item.index)
             } // for
 
-            if (indexBefore !== indexAfter) {
-                log('bookmark_sort -> index ' + indexBefore + ' to ' + indexAfter + ' for parent ' + parent_id)
+            if (indexBefore.join(',') !== indexAfter.join(',')) {
+                log('bookmark_sort -> index ' + indexBefore.join(',') + ' to ' + indexAfter.join(',') + ' for parent ' + parent_id)
 
                 await bookmark_reorder(bookmarks)
             } else {
