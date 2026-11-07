@@ -8,7 +8,7 @@
 核心功能是輕量、無追蹤、背景自動排序書籤的瀏覽器擴充功能（Manifest V3）。
 
 - `origin` 是 `SanHsien/sprucemarks`（預設分支 `main`），為自主長期維護線。
-- `upstream` 是 `nightmode/sprucemarks`（已於 2026-08-28 封存歸檔，完全唯讀）。
+- `upstream` 是 `nightmode/sprucemarks`（已於 2026-08-28 封存歸檔；2026-11-07 查詢時 repo 與帳號已回 404，見 [`docs/UPSTREAM.md`](docs/UPSTREAM.md)）。
 - 保留上游作者、CC0 1.0 授權與擴充功能核心。本 fork 的維護差異記在 [`FORK.md`](FORK.md) 與 [`docs/DECISIONS.md`](docs/DECISIONS.md)。
 - 主要開發與完整驗收環境是 **Windows 11 + PowerShell**。本專案為純 Windows 原生維護線，門禁與工作流程皆於 Windows 原生環境執行。
 

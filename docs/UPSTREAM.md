@@ -5,7 +5,8 @@
 - **原專案**：[`nightmode/sprucemarks`](https://github.com/nightmode/sprucemarks)
 - **原始授權**：CC0 1.0 Universal (Public Domain Dedication)
 - **封存日期**：2026-08-28
-- **狀態**：Archived（唯讀，已停止開發）
+- **狀態**：Archived（唯讀，已停止開發）；2026-11-07 查詢時 repo 與 `nightmode` 帳號都回 404（已不存在）
+- **存檔**：[Wayback Machine 2026-09-02](https://web.archive.org/web/20260902040738/https://github.com/nightmode/sprucemarks)
 - **基準提交 (Baseline Commit)**：`9525101dc4b029daa7eabc998c3838c2b0524bab`（Commit Message: `archive`）
 - **發行標籤**：`v2026.8.28.0`
 
@@ -27,3 +28,12 @@
 1. **免除定時輪詢**：因上游已永久封存且為唯讀狀態，本專案不掛載定期輪詢上游之工作流程。
 2. **獨立維護線**：所有未來更新與相容性維護均以 `SanHsien/sprucemarks` 為主線。
 3. **基準鎖定**：本專案以 `9525101` 作為溯源基準點。
+
+---
+
+## 2026-11-07：原作者 repo 消失與 fork 網路改掛
+
+- `gh api repos/nightmode/sprucemarks` 與 `gh api users/nightmode` 都回 404。
+- `gh api repos/SanHsien/sprucemarks --jq .parent.full_name` 回 `authorizedaccess/sprucemarks`：原 repo 消失後，GitHub 把 fork 網路的根改成另一份副本（最後推送 2025-06-26、0 star）。那不是原作者，GitHub 頁首的「forked from」因此標錯來源。
+- 處理方式見 [`DECISIONS.md`](DECISIONS.md) ADR-04。
+- 原作者若重新出現：`gh api repos/nightmode/sprucemarks` 不再回 404 時，比對它與 `9525101` 的差異，再決定要不要恢復上游檢查（[`ROADMAP.md`](../ROADMAP.md)「刻意不做」第一列）。

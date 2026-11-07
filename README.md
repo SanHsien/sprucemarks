@@ -8,6 +8,7 @@
 > [!NOTE]
 > 本 repo 為 [`nightmode/sprucemarks`](https://github.com/nightmode/sprucemarks) 之 Windows-first 獨立維護與保存 fork。
 > 原上游已於 2026-08-28 宣告封存歸檔（Commit `9525101`，Tag `v2026.8.28.0`）。本專案依 [CC0 1.0 Universal 公眾領域貢獻宣言](LICENSE) 進行自主維護與現代化標準化。
+> 2026-11-07 查詢時，原作者的 repo 與 GitHub 帳號都已不存在（回 404）；原 repo 的最後公開樣貌可看 [Wayback Machine 2026-09-02 存檔](https://web.archive.org/web/20260902040738/https://github.com/nightmode/sprucemarks)。同日 GitHub 把本 repo 的 fork 來源顯示為 `authorizedaccess/sprucemarks`，那是原 repo 消失後 GitHub 自動改選的另一份副本，**不是原作者**；原作者與授權以本段和 [NOTICE.md](NOTICE.md) 為準。
 > 英文原版鏡像請見 [README.en.md](README.en.md)；維護方針請見 [FORK.md](FORK.md) 與 [NOTICE.md](NOTICE.md)。
 
 ---

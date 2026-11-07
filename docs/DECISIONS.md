@@ -58,3 +58,22 @@
 1. [`README.md`](../README.md) 作為繁體中文主要入口，收錄完整擴充功能特色、Edge/Chrome/Firefox 圖文式安裝流程與開發門禁指引。
 2. [`README.en.md`](../README.en.md) 保留原作者英文內容，並加上維護線標註與相互連結。
 3. 全庫文件維持在 [CC0 1.0 Universal](../LICENSE) 條款下持續釋出。
+
+---
+
+## ADR-04: 原作者 repo 消失後離開 GitHub fork 網路
+
+- **日期**：2026-11-07
+- **狀態**：提議（等維護者在 GitHub 設定頁執行）
+
+### 背景脈絡
+2026-11-07 查詢：`nightmode/sprucemarks` 與 `nightmode` 帳號都回 404；GitHub 把本 repo 的 fork 來源改顯示為 `authorizedaccess/sprucemarks`（另一份副本，不是原作者）。本 repo 自 ADR-01 起就不追上游、不跟上游比較，與原作者也沒有共同 Git 祖先（2026-10-24 獨立基準）。
+
+### 決策內容
+1. 建議在 Settings → General → Danger Zone 按「Leave fork network」。GitHub 文件說明這個動作不可逆，且不保留 issue、PR、wiki、star、watcher；本 repo 2026-11-07 查詢時這些都是 0（issue 與 wiki 已停用、PR 0、star 0），沒有 release。
+2. 溯源不依賴 GitHub 的 fork 標示：原作者、授權、基準提交 `9525101` 與存檔連結寫在 [`NOTICE.md`](../NOTICE.md)、[`README.md`](../README.md)、[`README.en.md`](../README.en.md)、[`UPSTREAM.md`](UPSTREAM.md)，脫離後原樣保留。
+3. 本機 `upstream` remote 保留不刪：它記錄原始網址；`fetch` 失敗是已知狀態。
+
+### 影響
+- 好處：頁首不再把來源標成錯的 repo；repo 會出現在 GitHub 預設的搜尋結果（fork 預設不顯示）；commit 可以計入貢獻統計。
+- 代價：之後無法再接回 fork 網路；原作者若重新出現，只能另外 fork 或用 remote 比對。

@@ -6,6 +6,8 @@
 **This software is no longer being tested or updated by the original upstream author.**
 This repository is a Windows-first maintenance and preservation fork of [`nightmode/sprucemarks`](https://github.com/nightmode/sprucemarks), dedicated to the public domain under CC0 1.0 Universal.
 
+As of 2026-11-07 the original repository and the `nightmode` GitHub account both return 404. The last public state of the original repository is in the [Wayback Machine snapshot of 2026-09-02](https://web.archive.org/web/20260902040738/https://github.com/nightmode/sprucemarks). On the same date GitHub showed this repository as forked from `authorizedaccess/sprucemarks`; that is another copy that GitHub picked as the new network root after the original disappeared, **not the original author**. Authorship and licensing are as stated here and in [NOTICE.md](NOTICE.md).
+
 ---
 
 # Sprucemarks

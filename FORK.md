@@ -47,7 +47,7 @@
 ## 分支與 remote
 
 - `origin/main`：SanHsien 維護線，也是唯一長期分支。
-- `upstream`：nightmode 原始專案（已封存唯讀，僅作歷史溯源）。
+- `upstream`：nightmode 原始專案（已封存唯讀，僅作歷史溯源）。2026-11-07 查詢時該 repo 與作者帳號已回 404，`git fetch upstream` 會失敗；溯源改看 [`NOTICE.md`](NOTICE.md) 的存檔連結與基準提交 `9525101`。
 - 日常修改在本機跑過 gate 後直接推送到 `origin/main`。
 
 ---

@@ -7,7 +7,7 @@
 | 版本 | 支援狀態 |
 |---|---|
 | `main` (SanHsien/sprucemarks) | :white_check_mark: 支援 |
-| 上游 (nightmode/sprucemarks) | :x: 已於 2026-08-28 封存，不再維護 |
+| 上游 (nightmode/sprucemarks) | :x: 已於 2026-08-28 封存，2026-11-07 查詢時已不存在 |
 
 ---
 

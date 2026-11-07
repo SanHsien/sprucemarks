@@ -7,9 +7,10 @@ updates:
   #
   # 上游 nightmode/sprucemarks 已經 archived（2026-08-28 最後一次推送，唯讀、
   # 0 個 issue、PR 功能關閉），不會再有新的 commit／PR／issue，所以週期性的上游
-  # 檢查沒有對象可查。解除條件很明確：上游取消封存就把這兩條豁免拿掉並補上檢查器。
+  # 檢查沒有對象可查。2026-11-07 起原 repo 與作者帳號都回 404（docs/UPSTREAM.md）。
+  # 解除條件：原 repo 重新出現並恢復維護，就把這兩條豁免拿掉並補上檢查器。
   #
-  # fleet-waiver: upstream_check -- 上游 nightmode/sprucemarks 已 archived，不會再有新 commit／PR／issue
+  # fleet-waiver: upstream_check -- 上游 nightmode/sprucemarks 已 archived，2026-11-07 起 repo 已不存在
   # fleet-waiver: upstream_tickets -- 同上：上游已 archived，沒有 PR／issue 兩軸可追
   - package-ecosystem: "github-actions"
     directory: "/"
