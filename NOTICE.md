@@ -13,7 +13,7 @@
 
 原作者已將本作品貢獻至公眾領域，放棄在法律許可範圍內於全球所享有之著作權及其相關權利。
 
-GitHub 介面上的「forked from」標示不是溯源依據：原 repo 消失後，GitHub 在 2026-11-07 把本 repo 的 fork 來源顯示為 `authorizedaccess/sprucemarks`（另一份副本，不是原作者）。原作者以本檔為準；若本 repo 之後離開 GitHub 的 fork 網路，本檔與 README 的來源段落照樣保留。
+GitHub 介面上的「forked from」標示不是溯源依據：原 repo 消失後，GitHub 在 2026-11-07 把本 repo 的 fork 來源顯示為 `authorizedaccess/sprucemarks`（另一份副本，不是原作者）。原作者以本檔為準；本 repo 已於 2026-11-07 離開 GitHub 的 fork 網路，本檔與 README 的來源段落照樣保留。
 
 ---
 

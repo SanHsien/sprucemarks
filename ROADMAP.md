@@ -4,12 +4,12 @@
 > 現況段的數字是 2026-10-29 依 `main` `2ee3dfa2fcc0` 查的快照（上游狀態 2026-11-07 重查），開工前先重查 GitHub。
 
 ## 現況
-自動排序書籤的瀏覽器擴充功能（Windows 原生維護 fork，原始碼在 `source/`，發行檔在 `deploy/`）。2026-10-29 `gh` 查詢（`main` `2ee3dfa2fcc0`）：open PR 0、Dependabot 與 code scanning 告警 0；CI、CodeQL 最近一次 success，GitHub Pages 最近一次 success 在 2026-09-11；issues 已停用，open issue 數記為「未查到」；無 GitHub Release。上游 `nightmode/sprucemarks` 已 archived（`docs/DECISIONS.md` ADR-01），2026-11-07 查詢時 repo 與作者帳號都回 404，GitHub 把 fork 來源改標成 `authorizedaccess/sprucemarks`（不是原作者，`docs/UPSTREAM.md`）；不設上游檢查（`.github/dependabot.yml` 的 fleet-waiver）。商店狀態見 `docs/STORE_LISTING.md:4`。
+自動排序書籤的瀏覽器擴充功能（Windows 原生維護 fork，原始碼在 `source/`，發行檔在 `deploy/`）。2026-10-29 `gh` 查詢（`main` `2ee3dfa2fcc0`）：open PR 0、Dependabot 與 code scanning 告警 0；CI、CodeQL 最近一次 success，GitHub Pages 最近一次 success 在 2026-09-11；issues 已停用，open issue 數記為「未查到」；無 GitHub Release。上游 `nightmode/sprucemarks` 已 archived（`docs/DECISIONS.md` ADR-01），2026-11-07 查詢時 repo 與作者帳號都回 404，GitHub 曾把 fork 來源改標成 `authorizedaccess/sprucemarks`（不是原作者，`docs/UPSTREAM.md`），同日已離開 fork 網路；不設上游檢查（`.github/dependabot.yml` 的 fleet-waiver）。商店狀態見 `docs/STORE_LISTING.md:4`。
 
 ## 近期：可以直接動手
 | 項目 | 為什麼 | 驗收方式 | 建議執行者 | 證據 |
 | --- | --- | --- | --- | --- |
-| 離開 GitHub fork 網路（Settings → General → Danger Zone → Leave fork network，網址 https://github.com/SanHsien/sprucemarks/settings） | 原 repo 已不存在，頁首的 fork 來源標成另一份副本；不可逆，要維護者確認後本人按 | `gh api repos/SanHsien/sprucemarks --jq '.fork'` 回 `false`；README／NOTICE 的來源段落仍在；CI、CodeQL 在 `main` 仍 success | 維護者 | `docs/DECISIONS.md` ADR-04；repo-fleet-ops `docs/FORK-NETWORK-REVIEW.md` |
+| 無 | 2026-10-26 深掃已修 `bookmark_sort` 缺陷（`2ee3dfa`）；2026-11-07 已離開 GitHub fork 網路（`docs/DECISIONS.md` ADR-04）；沒有 open PR／告警，也沒有停在一半的工作 | 無（有新缺陷時加在這裡） | 無 | `2ee3dfa`；`docs/DECISIONS.md` ADR-04 |
 
 ## 中期：等條件成立再做
 | 項目 | 觸發條件 | 驗收方式 | 建議執行者 | 證據 |

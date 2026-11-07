@@ -64,7 +64,7 @@
 ## ADR-04: 原作者 repo 消失後離開 GitHub fork 網路
 
 - **日期**：2026-11-07
-- **狀態**：提議（等維護者在 GitHub 設定頁執行）
+- **狀態**：已執行（2026-11-07 維護者按下 Leave fork network；`gh api repos/SanHsien/sprucemarks --jq .fork` 回 `false`，分支保護、Dependabot 告警與 Actions 仍在）
 
 ### 背景脈絡
 2026-11-07 查詢：`nightmode/sprucemarks` 與 `nightmode` 帳號都回 404；GitHub 把本 repo 的 fork 來源改顯示為 `authorizedaccess/sprucemarks`（另一份副本，不是原作者）。本 repo 自 ADR-01 起就不追上游、不跟上游比較，與原作者也沒有共同 Git 祖先（2026-10-24 獨立基準）。

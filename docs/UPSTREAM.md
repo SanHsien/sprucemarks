@@ -35,5 +35,5 @@
 
 - `gh api repos/nightmode/sprucemarks` 與 `gh api users/nightmode` 都回 404。
 - `gh api repos/SanHsien/sprucemarks --jq .parent.full_name` 回 `authorizedaccess/sprucemarks`：原 repo 消失後，GitHub 把 fork 網路的根改成另一份副本（最後推送 2025-06-26、0 star）。那不是原作者，GitHub 頁首的「forked from」因此標錯來源。
-- 處理方式見 [`DECISIONS.md`](DECISIONS.md) ADR-04。
+- 處理方式見 [`DECISIONS.md`](DECISIONS.md) ADR-04：同日已離開 GitHub fork 網路，頁首不再顯示錯的來源。
 - 原作者若重新出現：`gh api repos/nightmode/sprucemarks` 不再回 404 時，比對它與 `9525101` 的差異，再決定要不要恢復上游檢查（[`ROADMAP.md`](../ROADMAP.md)「刻意不做」第一列）。
