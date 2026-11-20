@@ -26,4 +26,4 @@
 
 ## 維護方式
 - 依賴：Dependabot 每週一追 `github-actions`，合併前先讀 diff。
-- 修改後執行 `pwsh -NoProfile -File toolsdev_check.ps1`（含 `tools/tests/test_background_logic.py` 的記憶體 Chrome mock；單跑用 `python -m pytest -c tools/pytest.ini tools/tests/test_background_logic.py`，直接 `python` 執行該檔不會跑任何測試），並確認 CI、CodeQL 綠。
+- 修改後執行 `pwsh -NoProfile -File tools\dev_check.ps1`（含 `tools/tests/test_background_logic.py` 的記憶體 Chrome mock；單跑用 `python -m pytest -c tools/pytest.ini tools/tests/test_background_logic.py`，直接 `python` 執行該檔不會跑任何測試），並確認 CI、CodeQL 綠。
