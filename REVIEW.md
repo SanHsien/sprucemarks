@@ -64,6 +64,14 @@ gh repo set-default --view
 
 ---
 
+## 增量審查 findings（2026-11-20，`4b96361..cbce5b0`）
+
+| ID | 嚴重度 | 做了什麼 | 修復 |
+|---|---|---|---|
+| C-1 | P2 | `ROADMAP.md` 的驗證指令（直接 `python` 執行測試檔，不跑任何測試卻 exit 0）改為 `dev_check.ps1` 與 pytest 指令；全 repo 僅此一處重複 | `f97045b` + 本輪補修反斜線 `018234b`，2026-11-20 |
+| H-1 | P3 | 找不到 node 時背景邏輯測試改為失敗（`test_node_is_available`）；明確設 `SPRUCEMARKS_ALLOW_NO_NODE=1` 才 skip；CI 有 setup-node 不受影響 | `29ddd3a`，2026-11-20 |
+| H-2 | P3 | 新增 `tools/tests/test_deploy_sync.py`：`source/background.js.jss` include 的每個檔案須逐字出現在 `deploy/background.js`；刻意改動 deploy 一處已實測失敗 | `da92db5`，2026-11-20 |
+
 ## 接受、不改契約
 
 | ID | 嚴重度 | 處理 |
